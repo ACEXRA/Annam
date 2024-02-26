@@ -4,7 +4,8 @@ import Feed from "../items/Feed";
 const FeedPage = () => {
   return (
     <>
-      <Feed />
+      <div>HI</div>
+      {/* <Feed /> */}
     </>
   );
 };
