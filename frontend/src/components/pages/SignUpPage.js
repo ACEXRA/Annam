@@ -35,7 +35,7 @@ const SignUpPage = () => {
               <Form.Control
                 required
                 type="email"
-                value={emailAddress || ""}
+                value={emailAddress}
                 onChange={(e) => setEmailAddress(e.target.value)}
               />
             </Form.Group>
@@ -44,7 +44,7 @@ const SignUpPage = () => {
               <Form.Control
                 required
                 type="text"
-                value={name || ""}
+                value={name}
                 onChange={(e) => setName(e.target.value)}
               />
             </Form.Group>
@@ -53,7 +53,7 @@ const SignUpPage = () => {
               <Form.Control
                 required
                 type="password"
-                value={password || ""}
+                value={password}
                 onChange={(e) => setPassword(e.target.value)}
               />
             </Form.Group>
@@ -62,7 +62,7 @@ const SignUpPage = () => {
               <Form.Control
                 required
                 type="password"
-                value={confirmPassword || ""}
+                value={confirmPassword}
                 onChange={(e) => setConfirmPassword(e.target.value)}
               />
               {passError && <div style={{ color: "red" }}>{passError}</div>}
