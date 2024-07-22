@@ -6,6 +6,7 @@ const WelcomePage = () => {
     <Container>
       <Card>
         <Card.Body>
+          <Card.Title>Annam</Card.Title>
           <Button>SignIn</Button>
           <Button>SignUp</Button>
         </Card.Body>

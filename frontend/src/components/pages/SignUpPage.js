@@ -1,12 +1,20 @@
 import React, { useState } from "react";
 import { Button, Card, Container, Form } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 
 const SignUpPage = () => {
+  const navigate = useNavigate();
+
   const [emailAddress, setEmailAddress] = useState("");
   const [name, setName] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [passError, setPassError] = useState("");
+
+  const clickHandler = () => {
+    navigate("/signIn");
+  };
+
   const submitHandler = (e) => {
     e.preventDefault();
     if (confirmPassword !== password) {
@@ -28,6 +36,7 @@ const SignUpPage = () => {
   return (
     <Container className="my-5" style={{ maxWidth: "600px" }}>
       <Card className="bg-secondary">
+        <Card.Title className="m-3">Sign Up</Card.Title>
         <Card.Body>
           <Form onSubmit={submitHandler}>
             <Form.Group className="mb-3">
@@ -68,8 +77,11 @@ const SignUpPage = () => {
               {passError && <div style={{ color: "red" }}>{passError}</div>}
             </Form.Group>
             <Form.Group className="mb-3">
-              <Form.Text style={{ cursor: "pointer" }}>
-                Already have an account ? <u>Click here</u>
+              <Form.Text>
+                Already have an account ?{" "}
+                <u style={{ cursor: "pointer" }} onClick={clickHandler}>
+                  Click here
+                </u>
               </Form.Text>
             </Form.Group>
             <Button type="submit">Submit</Button>
