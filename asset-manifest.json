@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/annam/static/css/main.ff02f4b5.css",
-    "main.js": "/annam/static/js/main.8b0e2599.js",
+    "main.js": "/annam/static/js/main.8f2d58af.js",
     "index.html": "/annam/index.html",
     "main.ff02f4b5.css.map": "/annam/static/css/main.ff02f4b5.css.map",
-    "main.8b0e2599.js.map": "/annam/static/js/main.8b0e2599.js.map"
+    "main.8f2d58af.js.map": "/annam/static/js/main.8f2d58af.js.map"
   },
   "entrypoints": [
     "static/css/main.ff02f4b5.css",
-    "static/js/main.8b0e2599.js"
+    "static/js/main.8f2d58af.js"
   ]
 }
